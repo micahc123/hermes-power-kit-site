@@ -82,7 +82,10 @@
 <nav>
   <div class="wrap">
     <div class="brand"><span class="glyph">H</span> Hermes&nbsp;Power&nbsp;Kit</div>
-    <a class="nav-cta" href="#install">Install</a>
+    <div style="display:flex;align-items:center;gap:16px">
+      <a href="https://github.com/micahc123/hermes-power-kit" style="text-decoration:none;color:var(--muted);font-size:14px;font-weight:600">Code ↗</a>
+      <a class="nav-cta" href="#install">Install</a>
+    </div>
   </div>
 </nav>
 
@@ -208,13 +211,13 @@
     <h2>Up and running in one command.</h2>
     <p class="lead">Clone the kit, run the installer, and you're done — it sets up Hermes if needed, pins your provider, and drops the Core into <span class="mono">~/.hermes</span>. Then add the packs you want.</p>
     <div class="install">
-      <code><span class="p">$</span> git clone &lt;your-kit-repo&gt; hermes-power-kit &amp;&amp; cd hermes-power-kit</code>
+      <code><span class="p">$</span> git clone https://github.com/micahc123/hermes-power-kit.git &amp;&amp; cd hermes-power-kit</code>
       <code><span class="p">$</span> bash install.sh</code>
       <code><span class="p">$</span> kit add business research loops routines catalog</code>
       <code><span class="p">$</span> kit doctor   <span style="color:var(--dim)"># confirm everything's healthy</span></code>
     </div>
     <div class="cta-row">
-      <a class="btn" href="#">Get the kit</a>
+      <a class="btn" href="https://github.com/micahc123/hermes-power-kit">Get the kit ↗</a>
     </div>
   </div>
 </section>
