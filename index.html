@@ -92,8 +92,8 @@
 <header>
   <div class="wrap">
     <span class="eyebrow">◆ a drop-in kit for NousResearch <span class="mono">hermes-agent</span></span>
-    <h1>Make Hermes <span class="u">cheap, reliable,<br>and built for your business.</span></h1>
-    <p class="sub">Hermes is powerful but ships tuned for engineers — it burns tokens, its memory is fragile, and its skills are dev tools. This kit fixes that out of the box: cost control, reliable memory, safe automation loops, and ready-made business skills. One command. No extra dependencies.</p>
+    <h1>Make Hermes <span class="u">cheap, reliable,<br>and safe to run.</span></h1>
+    <p class="sub">Hermes is powerful but ships tuned for engineers — it burns tokens, its memory is fragile, and automation can run up a bill. This kit fixes that out of the box: cost control, reliable memory, budget-capped automation, and a hand-vetted skill catalog. One command. No extra dependencies.</p>
     <div class="cta-row">
       <a class="btn" href="#install">Get started</a>
       <a class="btn ghost" href="#inside">What's inside</a>
@@ -144,9 +144,9 @@
         <div class="fix">→ One-command install that pins your provider</div>
       </div>
       <div class="pain">
-        <h3>🗂️ Nothing for your business</h3>
-        <p>Bundled skills are dev &amp; ML tools. There's no content engine, inbox triage, research, or bookkeeping.</p>
-        <div class="fix">→ A ready-made business skill pack</div>
+        <h3>🛡️ The skill hubs are risky</h3>
+        <p>Public skill hubs are full of unvetted — and reportedly outright malicious — skills. Installing blind from them is a real supply-chain risk.</p>
+        <div class="fix">→ A hand-vetted catalog + a preview-only installer</div>
       </div>
     </div>
   </div>
@@ -162,12 +162,6 @@
         <h3>Core</h3>
         <p>Token/cost guard, reliable-memory vault, session hygiene, cost audit, safety guardrails, tuned config, and the <span class="mono">kit</span> CLI.</p>
         <span class="tag">always installed</span>
-      </div>
-      <div class="card">
-        <div class="ico">💼</div>
-        <h3>Business pack</h3>
-        <p>Content engine, inbox triage, research-to-brief, ship-it deploy, bookkeeping, social scheduler, CRM-lite, weekly review.</p>
-        <span class="tag">8 skills</span>
       </div>
       <div class="card">
         <div class="ico">🤖</div>
@@ -196,11 +190,11 @@
     </div>
 
     <div class="cmds">
-      <span class="cmd">/content-engine</span>
-      <span class="cmd">/launch</span>
-      <span class="cmd">/triage</span>
-      <span class="cmd">/review</span>
       <span class="cmd">/research</span>
+      <span class="cmd">/cost</span>
+      <span class="cmd">kit add &lt;pack&gt;</span>
+      <span class="cmd">kit doctor</span>
+      <span class="cmd">kit loop</span>
     </div>
   </div>
 </section>
@@ -243,7 +237,7 @@
     <div class="install">
       <code><span class="p">$</span> git clone https://github.com/micahc123/hermes-power-kit.git &amp;&amp; cd hermes-power-kit</code>
       <code><span class="p">$</span> bash install.sh</code>
-      <code><span class="p">$</span> kit add business research loops routines catalog</code>
+      <code><span class="p">$</span> kit add research loops routines catalog</code>
       <code><span class="p">$</span> kit doctor   <span style="color:var(--dim)"># confirm everything's healthy</span></code>
     </div>
     <div class="cta-row">
